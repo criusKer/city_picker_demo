@@ -153,6 +153,10 @@ class _ChooseListState extends State<ChooseList> {
                       if (scrollController[2].hasClients) {
                         scrollController[2].jumpTo(0.0);
                       }
+                    }else if(columnNum == 3){
+                      setState(() {
+                        areaIndex = _index;
+                      });
                     }
                   },
                   itemBuilder: (context, index) {
